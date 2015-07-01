@@ -1,5 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Home Page' />
+<cms:template title='Introview - The Social Video Recruitment Platform for Job Seekers and Recruiters' />
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -11,9 +11,9 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Introview - The Future of Video Recruitment</title>		
+        <title>Introview - The Social Video Recruitment Platform for Job Seekers and Recruiters</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="Introview - The Future of Video Recruitment">
+        <meta name="description" content="Introview - The Social Video Recruitment Platform for Job Seekers and Recruiters">
         <meta name="keywords" content="introview , video , recruitment">
         <meta name="author" content="Peter Watters">
 		
@@ -77,10 +77,8 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Home</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#features">features</a></li>
-                        <li><a href="#testimonials">Testimonial</a></li>
-                        <li><a href="#price">price</a></li>
+                        <li><a href="#customers">Customers</a></li>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -97,7 +95,7 @@
 					<div class="row">
 						<div class="col-md-4 wow animated fadeInLeft">
 							<div class="recent-works">
-								<h3>About Us</h3>
+								<h3>Welcome To Introview</h3>
 								<div id="works">
 									<div class="work-item">
 									<iframe width="400" height="250" src="https://www.youtube.com/embed/GzwlG_YYO0E" frameborder="0" allowfullscreen></iframe>
@@ -107,13 +105,20 @@
 						</div>
 						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
 							<div class="welcome-block">
-								<h3>Welcome To Introview</h3>								
+								<h3>Essential Video Recruiting Software</h3>								
 						     	 <div class="message-body">
 								<img src="img/gavin_teehan.jpg" class="pull-left" alt="member">
 								<cms:editable name='welcome_statement' type='richtext'>
-						       		<p>Our mission is to make a change for the better, for a much easier and more efficient recruitment process.
-						       		   <b>Connect</b> candidates to recruiters and vice versa, using creative ways for candidates to stand out and be found in a <b>Search</b>. Using the power of the internet for the most important part of recruitment..... <b>Networking</b>.
-						       		</p>
+						       		<p>
+						       			Introview is the leading social video recruiting platform to find and fill roles. Across the world companies and job seekers use our video job pitches, video applicant and social video recruiting software to bring motion to the recruitment process.
+						       		
+									<b>The video jobs platform where recruiters and jobseekers meet in motion</b> <br />
+                                    <b>“Connect – Search – Network” </b> <br />
+										Introview is a video powered jobs platform that connects job seekers and employers through video resumes, jobs boards, video pitches and online interviews.										
+									</p>
+
+
+
 						       	</cms:editable>	
 						     	 </div>
 						    </div>
@@ -125,64 +130,72 @@
 			
 			
 			<!-- Service section -->
-			<section id="service">
+			<section id="customers">
 				<div class="container">
 					<div class="row">
 					
 						<div class="sec-title text-center">
-							<h2 class="wow animated bounceInLeft">Service</h2>
-							<p class="wow animated bounceInRight">The Key Features of Introview</p>
+							<h2 class="wow animated bounceInLeft">Customers</h2>
+							<p class="wow animated bounceInRight">
+								Discover how Introview makes video the platform to hire, source and interview talent.  
+								Job seeks and Recruiters use our Social Video Recruitment Platform to Connect, Search, Network and Interview.  
+							</p>
 						</div>
 						
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-home fa-3x"></i>
 								</div>
 
 								<cms:editable name='service_1' type='richtext'>
-									<h3>Support</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<h3>CANDIDATES</h3>
+									 <ul>
+									 	<li>Promote yourself with video</li>
+									 	<li>Reach more recruiters</li>
+									 	<li>Put your best face forward</li>
+									 	<li>Save time in getting that job</li>
+									 </ul>
 								</cms:editable>
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-tasks fa-3x"></i>
 								</div>
 
 								<cms:editable name='service_2' type='richtext'>
-									<h3>Well Documented</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<h3>TALENT ACQUISITION SPECIALISTS</h3>
+									<ul>
+									 	<li>Invite candidates to video pitches</li>
+									 	<li>Set questions and schedules</li>
+									 	<li>View how candidates present themselves</li>
+									 	<li>Schedule live video Introviews</li>
+									 	<li>Find the right candidates faster</li>
+									 </ul>
 								</cms:editable>
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-clock-o fa-3x"></i>
 								</div>
 
 								<cms:editable name='service_3' type='richtext'>
-									<h3>Design UI/UX</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+									<h3>RECRUITMENT AND STAFFING FIRMS</h3>
+									<ul>
+									 	<li>Speed up the recruitment process</li>
+									 	<li>Meet job seekers in motion</li>
+									 	<li>Save on recruitment and travel costs</li>
+									 	<li>Review video resumes and video pitches</li>
+									 	<li>Reduce time and resources to fill roles</li>
+									 	<li>Set specific video interview questions to selected candidates</li>
+									</ul>
 								</cms:editable>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
-								</div>
-								
-								<cms:editable name='service_4' type='richtext'>
-									<h3>Web Security</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>		
-								</cms:editable>					
 							</div>
 						</div>
 						
@@ -191,133 +204,36 @@
 			</section>
 			<!-- end Service section -->
 			
-			<!-- portfolio section -->
-			<section id="features">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<cms:editable name='features' type='richtext'>
-								<h2>FEATURES</h2>	
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</cms:editable>
-						</div>
-						
-
-						<ul class="project-wrapper wow animated fadeInUp">
-							<li class="portfolio-item">							
-								<img src="img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
-								<figcaption class="mask">
-									<cms:editable name='feature_1' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="img/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">									
-									<cms:editable name='feature_2' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street" href="img/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">									
-									<cms:editable name='feature_3' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
-								<figcaption class="mask">									
-									<cms:editable name='feature_4' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">									
-									<cms:editable name='feature_5' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">									
-									<cms:editable name='feature_6' type='richtext'>
-										<h3>Wall street</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-									</cms:editable>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-						</ul>
-						
-					</div>
-				</div>
-			</section>
-			<!-- end portfolio section -->
 			
+
 			<!-- Testimonial section -->
 			<section id="testimonials" class="parallax">
 				<div class="overlay">
 					<div class="container">
-						<div class="row">
+					<div class="row">
 						
 							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>What our customers say</h2>
+								<h2>Use Video to View and Review Candidates  </h2>
 							</div>
-							
+					</div>
+						<div class="row">
+						
 							<div id="testimonial" class=" wow animated fadeInUp">
 								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
 									<div class="clearfix">
 
 									<cms:editable name='customer_testimonial' type='richtext'>
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+										<p>Why interview when you can Introview?</p>
 									</cms:editable>
 									</div>
 								</div>
 							</div>
 						
+						</div>
+						<div class="row">
+								If a picture paints a thousand words imagine how much impact video brings to the recruitment process. Video job pitches allows a recruiter to view candidates side by side to reduce time for all concerned. Introview allows recruiters to maximize their staffing efforts. It's time to see the entire talent picture with Cornerstone and make recruiting a core function of your talent management strategy. 
+
+								Introview is the video recruitment platform to connect candidates with prospective employers and recruiters.
 						</div>
 					</div>
 				</div>
@@ -380,6 +296,146 @@
 				</div>
 			</section>
 			<!-- end Price section -->
+			
+			<!-- portfolio section -->
+			<section id="features_1">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<cms:editable name='features' type='richtext'>
+								<h2>FEATURES - ???? needed?</h2>	
+							</cms:editable>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-home fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_1' type='richtext'>
+									<h3>BEST FACE FORWARD</h3>
+									<p>Introview video recruitment gives recruiters a real insight into a candidates verbal and presentation skills. It allows job seekers to put their best face forward in impressing potential employers. </p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-tasks fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_2' type='richtext'>
+									<h3>SET UP VIDEO JOB PITCHES</h3>
+									<p>Create a series of questions and invite candidates to do a video pitch then watch, compare and score at your leisure.</p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-clock-o fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_3' type='richtext'>
+									<h3>SHARE VIDEOS WITH TEAM</h3>
+									<p>Introview makes it easy to share the applicant’s video with any member of the recruitment team to review when it suits.</p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-heart fa-3x"></i>
+								</div>
+								
+								<cms:editable name='feature_4' type='richtext'>
+									<h3>SAVE TIME AND TRAVEL </h3>
+									<p>Pre-collect personal information, skill levels and profiles about the candidates on video prior to live video or face-to-face interview. The Introview social video recruitment solution is the easier way to make the right recruiting decisions.</p>		
+								</cms:editable>					
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end portfolio section -->
+
+			<!-- portfolio section -->
+			<section id="features">
+				<div class="container">
+					<div class="row">
+
+
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<cms:editable name='features' type='richtext'>
+								<h2>KEY FEATURES</h2>	
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</cms:editable>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-home fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_1' type='richtext'>
+									<h3>IntroLive </h3>
+									<p>Our live screen interview system for both 1-1 or live panel (up to 5 interviewers on multiple devices consecutively) 
+										Invite by forwarding link to the “Introview Room"
+									</p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-tasks fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_2' type='richtext'>
+									<h3>Online Resume </h3>
+									<p>Candidates fill out a one page online Resume with 60 sec video pitch attached</p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-clock-o fa-3x"></i>
+								</div>
+
+								<cms:editable name='feature_3' type='richtext'>
+									<h3>Social platform </h3>
+									<p>Review positions advertised, review new Schedules, post pitches, positions avail automatically from our Jobs Board, News etc</p>
+								</cms:editable>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-heart fa-3x"></i>
+								</div>
+								
+								<cms:editable name='feature_4' type='richtext'>
+									<h3>Jobs Board</h3>
+									<p>Our jobs board for both Recruiters and Candidates, easier, more efficient and faster recruitment process for all. Follow candidates , Companies and top choice positions tag</p>		
+								</cms:editable>					
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end portfolio section -->
+			
 			
 			<!-- Social section -->
 			<section id="social" class="parallax">
