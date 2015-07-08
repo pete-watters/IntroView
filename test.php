@@ -21,7 +21,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
 		
-		<!-- CSS ================================================== -->
+		<!-- CSS
+		================================================== -->
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 		
@@ -35,8 +36,6 @@
 	        <link rel="stylesheet" href="css/slit-slider.css">
 			<!-- bootstrap.min -->
 	        <link rel="stylesheet" href="css/animate.css">
-			<!-- Form validation Stylesheet -->
-	        <link rel="stylesheet" href="css/validate.css">
 			<!-- Main Stylesheet -->
 	        <link rel="stylesheet" href="css/main.css">
 
@@ -474,11 +473,12 @@
 						
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Contact</h2>
+							<p>Leave a Message</p>
 						</div>
 						
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form id="contact-form" action="#" method="post"  novalidate="novalidate">
+							<form action="#" method="post">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -491,7 +491,7 @@
 								<div class="input-field">
 									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
 								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect submit">Send</button>
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
 							</form>
 						</div>
 						
@@ -519,6 +519,18 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
+						<div class="wow animated fadeInDown">
+							<p>newsletter signup</p>
+							<p>Get Cool Stuff! We hate spam!</p>
+						</div>
+						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
+								<button type="submit" class="submit-icon">
+									<i class="fa fa-paper-plane fa-lg"></i>
+								</button>
+							</div>
+						</form>
 						<div class="footer-social">
 							<ul>
 								<li class="wow animated zoomIn">
@@ -574,54 +586,6 @@
 	        <script src="js/jquery.ba-cond.min.js"></script>
 			<!-- onscroll animation -->
 	        <script src="js/wow.min.js"></script>
-	        	<!-- jQuery Form validation -->
-	        <script src="js/jquery.validate.min.js"></script>
-			<script>
-				(function($,W,D)
-					{
-					    var JQUERY4U = {};
-					 
-					    JQUERY4U.UTIL =
-					    {
-					        setupFormValidation: function()
-					        {
-					            //form validation rules
-					            $("#contact-form").validate({
-					                rules: {
-					                    name: "required",
-					                    email: {
-					                        required: true,
-					                        email: true
-					                    },
-					                    subject: {
-					                        required: true,
-					                        minlength: 5
-					                    },
-					                    message: "required"
-					                },
-					                messages: {
-					                    name: "Please enter your firstname",
-					                    subject: {
-					                        required: "Please provide a password",
-					                        minlength: "Your password must be at least 5 characters long"
-					                    },
-					                    email: "Please enter a valid email address",
-					                    message: "Please enter a message"
-					                },
-					                submitHandler: function(form) {
-					                    form.submit();
-					                }
-					            });
-					        }
-					    }
-					 
-					    //when the dom has loaded setup form validation rules
-					    $(D).ready(function($) {
-					        JQUERY4U.UTIL.setupFormValidation();
-					    });
-					 
-					})(jQuery, window, document);
-			</script>
 			<!-- Custom Functions -->
 	        <script src="js/main.js"></script>
 

@@ -478,7 +478,7 @@
 						
 						
 						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
+							<form id="contact-form" action="#" method="post"  novalidate="novalidate">
 								<div class="input-field">
 									<input type="text" name="name" class="form-control" placeholder="Your Name...">
 								</div>
@@ -519,18 +519,6 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
-						<div class="wow animated fadeInDown">
-							<p>newsletter signup</p>
-							<p>Get Cool Stuff! We hate spam!</p>
-						</div>
-						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div class="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-								</button>
-							</div>
-						</form>
 						<div class="footer-social">
 							<ul>
 								<li class="wow animated zoomIn">
@@ -556,6 +544,7 @@
 						
 						<p>Copyright &copy; 2014-2015 Design By <a href="http://www.themefisher.com" target="_blank">Themefisher</a>. </p>
 						<p>Developed by <a href="http://comhairleteicneolaiochta.ie/" target="_blank">Comhairle Teicneolaiochta</a></p>
+						<p>Funded by <a href="https://www.localenterprise.ie/Fingal/" target="_blank"> <br> <img src="img/LEO-logo-NEW.jpg"></a></p>
 					</div>
 				</div>
 			</div>
@@ -583,6 +572,56 @@
 	        <!-- Fullscreen slider -->
 	        <script src="js/jquery.slitslider.js"></script>
 	        <script src="js/jquery.ba-cond.min.js"></script>
+
+			<!-- jQuery Form validation -->
+	        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script>
+				(function($,W,D)
+					{
+					    var JQUERY4U = {};
+					 
+					    JQUERY4U.UTIL =
+					    {
+					        setupFormValidation: function()
+					        {
+					            //form validation rules
+					            $("#contact-form").validate({
+					                rules: {
+					                    name: "required",
+					                    email: {
+					                        required: true,
+					                        email: true
+					                    },
+					                    subject: {
+					                        required: true,
+					                        minlength: 5
+					                    },
+					                    message: "required"
+					                },
+					                messages: {
+					                    name: "Please enter your firstname",
+					                    subject: {
+					                        required: "Please provide a password",
+					                        minlength: "Your password must be at least 5 characters long"
+					                    },
+					                    email: "Please enter a valid email address",
+					                    message: "Please enter a message"
+					                },
+					                submitHandler: function(form) {
+					                    form.submit();
+					                }
+					            });
+					        }
+					    }
+					 
+					    //when the dom has loaded setup form validation rules
+					    $(D).ready(function($) {
+					        JQUERY4U.UTIL.setupFormValidation();
+					    });
+					 
+					})(jQuery, window, document);
+			</script>
+
 			<!-- onscroll animation -->
 	        <script src="js/wow.min.js"></script>
 			<!-- Custom Functions -->
